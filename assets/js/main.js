@@ -11,6 +11,7 @@
         $wrapper = $('#page-wrapper'),
         $banner = $('#banner'),
         $header = $('#header');
+        $nav_unordered_list = $('#nav ul');
 
     // Breakpoints.
     breakpoints({
@@ -26,7 +27,7 @@
         window.setTimeout(function () {
             $body.removeClass('is-preload');
         }, 100);
-        $('#years').html(moment().diff([1996, 4, 1], 'years'));
+        // $('#years').html(moment().diff([1996, 4, 1], 'years'));
     });
 
     // Mobile?
@@ -104,9 +105,9 @@
 
         $banner.scrollex({
             bottom: $header.outerHeight() + 1,
-            terminate: function () { $header.removeClass('alt'); },
+            terminate: function () { $header.removeClass('alt'); $nav_unordered_list.addClass('no-transition'); },
             enter: function () { $header.addClass('alt'); },
-            leave: function () { $header.removeClass('alt'); }
+            leave: function () { $header.removeClass('alt'); $nav_unordered_list.addClass('no-transition'); $nav_unordered_list.show() }
         });
 
     }

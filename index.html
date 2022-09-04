@@ -2,29 +2,36 @@
 <html>
 
 <head>
-    <title>Mário Silva</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <title>Mário Silva</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/timeline.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
 </head>
 
 <body id="page-top" class="landing is-preload">
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
 
-        <!-- Header -->
-        <header id="header" class="alt">
-            <h1><a id="home" href="#page-top">Mário Silva</a></h1>
-            <!-- <nav id="nav">
-                <ul>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><a id="home" href="#page-top">Mário Silva</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="#about" class="more">About Me</a></li>
+          <li><a href="#portfolio" class="more">Portfolio</a></li>
+          <li><a href="#work" class="more">Work</a></li>
+        </ul>
+        <!-- <ul>
                     <li class="special">
                         <a href="#menu" class="menuToggle"><span>Menu</span></a>
                         <div id="menu">
                             <ul>
-                                <li><a href="/">Home</a></li>
+                                <li><a href="#about">About Me</a></li>
                                 <li><a href="generic.html">Generic</a></li>
                                 <li><a href="elements.html">Elements</a></li>
                                 <li><a href="#">Sign Up</a></li>
@@ -32,118 +39,232 @@
                             </ul>
                         </div>
                     </li>
-                </ul>
-            </nav> -->
+                </ul> -->
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h2>Mário Silva</h2>
+        <p>Software Engineer</p>
+      </div>
+      <a href="#about" class="more "></a>
+    </section>
+
+    <!-- One -->
+    <section id="about" class="wrapper style1 special">
+      <div class="inner">
+        <header class="major">
+          <h2>About me</h2>
+          <p><span class="image left"><img src="images/foto.jpg" alt=""></span> I'm a
+            <!--<span
+                            id="years"></span>-years-old --> <u>software engineer</u> currently working @ <a
+              href="https://codavel.com" target="_blank">Codavel</a>.<br />
+            Always looking forward to new challenges, engaged in learning web development languages while I
+            was studiyng,
+            deepening my knowledge in Laravel, CSS and JavaScript. Later, I started to enhance my knowledge of
+            Java, C++ and Go while I was working as a software engineer. The eager to learn even more keeps me
+            moving towards the new technologies that emerge.<br />
+            <br />
+            Besides technology, I love music so it is the best partner when I'm coding.
+          </p>
         </header>
+        <ul class="icons major">
+          <li><a href="https://linkedin.com/in/silvacmario" target="_blank"
+              class="icon brands fa-linkedin major social"></a></li>
+          <li><a href="https://github.com/mrcsilva" target="_blank" class="icon brands fa-github major social"></a></li>
+          <li><a href="https://twitter.com/mariocostasilva" target="_blank"
+              class="icon solid brands fa-twitter major social"></a></li>
+          <li><a href="mailto:msilva.dev@gmail.com" class="icon solid fa-envelope major social"></a></li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- Banner -->
-        <section id="banner">
-            <div class="inner">
-                <h2>Mário Silva</h2>
-                <p>Software Engineer</p>
-            </div>
-            <a href="#about" class="more "></a>
-        </section>
+    <!-- Two -->
 
-        <!-- One -->
-        <section id="about" class="wrapper style1 special">
-            <div class="inner">
-                <header class="major">
-                    <h2>About me</h2>
-                    <p><span class="image left"><img src="images/foto.jpg" alt=""></span> I'm a <span
-                            id="years"></span>-year-old <u>software engineer</u> currently working @ <a href="https://codavel.com" target="_blank">Codavel</a>.<br />
-                        Always looking forward to new challenges, engaged in learning web development languages while I
-                        was studiyng,
-                        deepening my knowledge in Laravel, CSS and JavaScript. The eager to learn even more keeps me
-                        moving towards the new technologies that emerge.<br />
-                        <br />
-                        Besides technology, I love music so it is the best partner when I'm coding.</p>
-                </header>
-                <ul class="icons major">
-                    <li><a href="https://linkedin.com/in/silvacmario" target="_blank"
-                            class="icon brands fa-linkedin major style2"></a></li>
-                    <li><a href="https://github.com/mrcsilva" target="_blank"
-                            class="icon brands fa-github major style3"></a></li>
-                    <li><a href="mailto:msilva.dev@gmail.com" class="icon solid fa-envelope major style2"></a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Two -->
-        <div id="portfolio" class="portfolio-header">
-            <h1>Portfolio</h1>
+    <section id="portfolio" class="wrapper alt style2">
+      <div class="portfolio-header">
+        <h1>Portfolio</h1>
+      </div>
+      <section class="spotlight">
+        <div class="image"><img src="images/ecoforest/ecoforest_home.png" alt="" /></div>
+        <div class="content">
+          <h2>Ecoforest Control</h2>
+          <p>An app that allows it users to control the stoves made by <a target="_blank"
+              href="https://ecoforest.es">Ecoforest</a>. I built the app using
+            the <a target="_blank" href="https://flutter.dev">Flutter</a> framework that helped me
+            to quickly build an app for both Android and iOS. Each stove has an integrated computer
+            that provides a webpage were we can control the stove. However, that interface is not very
+            user friendly, so I decided to take advantage of the already available APIs and used them in the app.
+          </p>
+          <!-- <a class="button"><span>Play Store</span></a> -->
+          <a class="store" target="_blank"
+            href='https://play.google.com/store/apps/details?id=com.mariosilva.ecoforestControl&hl=en_US&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+              alt='Get it on Google Play'
+              src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+          <a class="store" target="_blank" href="https://apps.apple.com/pt/app/ecoforest-control/id1543893094"><img
+              class="apple" src="images/apple.svg" /></a>
         </div>
-        <section class="wrapper alt style2">
-            <section class="spotlight">
-                <div class="image"><img src="images/pic01.jpg" alt="" /></div>
-                <div class="content">
-                    <h2>Informatics Engineering Project</h2>
-                    <p>It was a project made in partnership with <a href="https://scbraga.pt">SC Braga</a> and the main
-                        goal was to develop a platform that could predict an injury based on all the agregated data
-                        about each player.</p>
-                    <a class="button demo"><span>Live Demo</span></a>
-                </div>
-            </section>
-            <section class="spotlight">
-                <div class="image"><img src="images/general2.png" alt="" /></div>
-                <div class="content">
-                    <h2>Software Labs</h2>
-                    <p>The goal of this project was to make a WebRTC API without using any kind of frameworks for
-                        establishing Peer-2-Peer (P2P) connections between web browsers that could transfer text and any
-                        kind of data. The sample application choosen was a chat that routed all data through the P2P
-                        network maintaining privacy. (Code available @ <a target="_blank"
-                            href="https://github.com/mrcsilva/lei">mrcsilva/lei</a>)</p>
-                    <a class="button demo"><span>Live Demo</span></a>
-                </div>
-            </section>
-        </section>
+      </section>
+      <section class="spotlight">
+        <div class="image"><img src="images/shareio/shareio.png" alt="" /></div>
+        <div class="content">
+          <h2>ShareIO</h2>
+          <p>Ever wondered how you could easily share files between devices and maintain privacy? Here's the app for
+            you! ShareIO allows you to
+            share files between mobile devices without the use of a middle server to deal with the file storage. All
+            happens thanks to
+            WebRTC that establishes a connection directly to the device you want to share your file with and sends it.
+          </p>
+          <button class="button app" disabled><span>Coming soon!</span></button>
+        </div>
+      </section>
+    </section>
 
-        <!-- Three -->
-        <!-- 
-        <section id="three" class="wrapper style3 special">
-            <div class="inner">
-                <header class="major">
-                    <h2>Accumsan mus tortor nunc aliquet</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-                        fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-                </header>
-                <ul class="features">
-                    <li class="icon fa-paper-plane">
-                        <h3>Arcu accumsan</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo
-                            Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon solid fa-laptop">
-                        <h3>Ac Augue Eget</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo
-                            Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon solid fa-code">
-                        <h3>Mus Scelerisque</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo
-                            Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon solid fa-headphones-alt">
-                        <h3>Mauris Imperdiet</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo
-                            Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-heart">
-                        <h3>Aenean Primis</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo
-                            Aenean ligula consequat consequat.</p>
-                    </li>
-                    <li class="icon fa-flag">
-                        <h3>Tortor Ut</h3>
-                        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo
-                            Aenean ligula consequat consequat.</p>
-                    </li>
-                </ul>
+    <!-- Three -->
+    <div id="work" class="portfolio-header">
+      <h1>Work</h1>
+    </div>
+    <section class="wrapper style3 timeline">
+      <div class="ag-timeline-block">
+        <!-- <div class="ag-timeline_title-box">
+                  <div class="ag-timeline_tagline">Timeline</div>
+                  <div class="ag-timeline_title">No Flex</div>
+                </div> -->
+        <section class="ag-section">
+          <div class="ag-format-container">
+            <div class="js-timeline ag-timeline">
+              <div class="js-timeline_line ag-timeline_line">
+                <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+              </div>
+              <div class="ag-timeline_list">
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">2021</div>
+                    </div>
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">Codavel</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="images/codavel.png" class="ag-timeline-card_img" width="640" height="360" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Codavel</div>
+                        <div class="ag-timeline-card_desc">
+                          At Codavel we provide mobile apps the boost they need to retain more users using Codavel's
+                          CDN.
+                          </br>
+                          </br>
+                          My main role is to help maintain the backend codebase and implemented new features that will
+                          get the
+                          solution more robust and less prone to error. For that use a variety of languages like C/C++,
+                          Javascript, Java, Go, and Python. All that is built on top of a Kubernetes cluster.
+                          </br>
+                          </br>
+                          For others to be able to use our solution an integration with mobile apps is required.
+                          I also help to maintain the existing integrations and implemented new ones using Java/Kotlin
+                          for Android
+                          and Swift/Objective-C for iOS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">Inetum (i2S)</div>
+                    </div>
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">2019</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="images/inetum.svg" class="ag-timeline-card_img inetum" width="640" height="260"
+                          alt="" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Inetum (i2S)</div>
+                        <div class="ag-timeline-card_desc">
+                          My first working experience! It was here that I learned how a software engineer actually
+                          works.
+                          Thanks to my colleagues I was able to integrate with the team very quickly and after 1 month I
+                          was already
+                          doing the same as them. My team was responsible to develop a data processing/migration tool.
+                          </br> We used Kafka
+                          and Flink to help us on getting the data from the main database (Oracle/Microsoft). Then using
+                          our Java code we did all
+                          the necessary processing to have again Flink saving the processed data on another database
+                          (Oracle/Microsoft).
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">2014</div>
+                    </div>
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">University of Minho</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="images/uminho.png" class="ag-timeline-card_img uminho" width="auto" height="360"
+                          alt="" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">University of Minho</div>
+                        <div class="ag-timeline-card_desc">
+                          After started studiyng in 2014, finished my Computer Science bachelor in 2017. During the
+                          bachelor
+                          I learned several skills and programming languages such as C and Java.
+                          </br>
+                          </br>
+                          Also in 2017 I started my master's degree in networking. The master's degree was very useful
+                          to
+                          develop even further the skills I obtained during the bachelor and I could also leverage that
+                          extra knowledge to expand my programming language repertoire. I was able to learn JavaScript
+                          and CSS,
+                          allowing me to create webapps. I also had the opportunity to create a few webapps that used
+                          WebRTC.
+                          </br>
+                          </br>
+                          To finish my master's degree I developed a webapp that would report the usage of all the
+                          access points installed
+                          in the Department of Informatics. This would allow the university to monitor the usage of the
+                          current infrastructure
+                          and decide if an intervention is needed. All this work got me an article available
+                          <a src="https://ieeexplore.ieee.org/document/9140909" target="_blank">here</a>.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </section>
-        -->
-        <!-- CTA -->
-        <!--
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <!--
         <section id="cta" class="wrapper style4">
             <div class="inner">
                 <header>
@@ -159,37 +280,38 @@
         -->
 
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-                <!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-                <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-                <!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-                <li><a href="https://linkedin.com/in/silvacmario" target="_blank" class="icon brands fa-linkedin"></a>
-                </li>
-                <li><a href="https://github.com/mrcsilva" target="_blank" class="icon brands fa-github"></a></li>
-                <li><a href="mailto:msilva.dev@gmail.com" class="icon solid fa-envelope"><span
-                            class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Mário Silva</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+        <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+        <!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+        <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+        <!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+        <li><a href="https://linkedin.com/in/silvacmario" target="_blank" class="icon brands fa-linkedin"></a>
+        </li>
+        <li><a href="https://github.com/mrcsilva" target="_blank" class="icon brands fa-github"></a></li>
+        <li><a href="mailto:msilva.dev@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Mário Silva</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </footer>
 
-    </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="assets/js/main.js"></script>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 
