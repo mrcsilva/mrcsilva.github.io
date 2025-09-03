@@ -51,3 +51,6 @@ coverage/
 *.seed
 *.pid.lock
 
+#Excluded images
+iPhone\ Frames
+
